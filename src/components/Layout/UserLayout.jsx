@@ -8,6 +8,9 @@ const UserLayout = () => {
       {/**** Header */}
       <Header />
       {/**** Main Content */}
+      <main>
+        <p>Lsasasa </p>
+      </main>
       {/**** Footer */}
       <Footer />
     </>
