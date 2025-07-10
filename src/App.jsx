@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UserLayout from './components/Layout/UserLayout';
+import Home from './components/pages/Home';
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<UserLayout />}>
           {/***User Route */}
+          <Route index element={<Home />}/>
         </Route>
         <Route>{/***Admin Route */}</Route>
       </Routes>
