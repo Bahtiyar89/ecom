@@ -30,6 +30,15 @@ const CartContents = () => {
       price: 5,
       image: 'https://picsum.photos/200?random=3',
     },
+    {
+      productId: 4,
+      name: 'Shirt',
+      size: 'L',
+      color: 'Green',
+      quantity: 2,
+      price: 5,
+      image: 'https://picsum.photos/200?random=4',
+    },
   ];
   return (
     <div>
