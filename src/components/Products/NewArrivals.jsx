@@ -161,9 +161,15 @@ const NewArrivals = () => {
             </div>
 
             {/**Scrollable Content */}
-            <div ref={scrollRef} className='container mx-auto overflow-x-scroll flex space-x-6 relative'>
+            <div 
+                ref={scrollRef} 
+                className='container mx-auto overflow-x-scroll flex space-x-6 relative'
+            >
                 {newArrivals.map((product)=>(
-                    <div key={product._id} className='min-w-[100%] sm:min-w-[50%] lg:min-w-[30%] relative'>
+                    <div 
+                        key={product._id} 
+                        className='min-w-[100%] sm:min-w-[50%] lg:min-w-[30%] relative'
+                    >
                         <img 
                             src={product.images[0]?.url} 
                             alt={product.images[0]?.altText||product.name} 
